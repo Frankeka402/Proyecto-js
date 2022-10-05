@@ -2,6 +2,8 @@
 var nombre = "franco";
 let apellido = 'garreton';
 const sexo = `masculino`;
+let num1 = 3;
+let num2 = 5;
 //#endregionvariables
 
 //#regionconsolas
@@ -10,25 +12,19 @@ console.log(apellido);
 console.log(sexo);
 //#endregionconsolas
 
-//#regionrepetitivas 
-for (x = 0; x < 10; x++) {
-    console.log(nombre);
-    console.log(apellido);
-    console.log(sexo);
+//#region 
+function multiplicacion(num1, num2) {
+    let m = num1 * num2;
+    return m;
+
 }
-let inicio = 0;
-let fin = [10];
-let inicio2 = [0];
-let fin2 = 10;
-for (inicio of fin) {
-    inicio++;
-    console.log(nombre);
-    console.log(apellido);
-    console.log(sexo);
-}
-for (fin2 of inicio2) {
-    fin2++;
-    console.log(nombre);
-    console.log(apellido);
-    console.log(sexo);
-}
+
+console.log(multiplicacion(num1, num2));
+//#endregion
+
+//#region 
+let colores = ["azul", "violeta", "rosa"];
+let [a, v, t] = colores;
+
+console.log(a, v, t);
+//#endregion
